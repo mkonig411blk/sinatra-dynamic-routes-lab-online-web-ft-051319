@@ -28,5 +28,9 @@ class App < Sinatra::Base
     erb :saywords 
   end 
   
-  get 
+  get '/:operation/:number1/:number2' do 
+    @op = params[:operation]
+    @num1 = params[:number1]
+    @num2 = params[:number2]
+    erb :
 end
